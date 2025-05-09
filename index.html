@@ -6,6 +6,8 @@
   <title>Arunagiri Charitable Trust</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" />
+
   <style>
     html { scroll-behavior: smooth; }
     section { padding: 60px 0; }
@@ -34,6 +36,8 @@
     }
   </style>
 </head>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
 <body>
 
 <!-- Navbar -->
@@ -56,49 +60,127 @@
     </div>
   </div>
 </nav>
+<!-- Gallery Section -->
 
-<section id="about" class="mt-5 pt-5 text-center">
-  <div class="container">
-    <h1 class="mb-3">Welcome to Arunagiri Charitable Trust</h1>
-    <p>Empowering lives through food donation, tree plantation, rehabilitation, and more.</p>
-  </div>
-</section>
+  
 
-<section id="activities" class="bg-light">
-  <div class="container">
-    <h2 class="text-center">Main Activities</h2>
-    <ul>
-      <li>🍱 Food Donation</li>
-      <li>♿ Physically Challenged Rehabilitation</li>
-      <li>👩‍🦱 Women Rehabilitation</li>
-      <li>🌪️ Natural Calamity Aid</li>
-      <li>🌳 Tree Plantation</li>
-      <li>🏥 Medical Camps</li>
-      <li>✏️ Stationery Donation</li>
-    </ul>
-  </div>
-</section>
+<section style="padding: 50px 20px; background: #fff;">
+    <div style="max-width: 1200px; margin: auto;">
+      <h2 style="color: #d4a017; text-align: center;">Our Main Charitable Activities</h2>
+      <p style="text-align: center; margin-top: 10px; font-size: 1.1em; color: #333;">
+        At Sri Arunagiri Charitable Trust, we are dedicated to transforming lives through impactful initiatives.
+      </p>
+  
+      <!-- Activity 1 -->
+      <div style="display: flex; flex-wrap: wrap; margin-top: 40px; gap: 30px; align-items: center;">
+        <div style="flex: 1; min-width: 280px;">
+          <img src="image1.jpg" alt="Nutritious Meals" style="width: 100%; border-radius: 8px;">
+        </div>
+        <div style="flex: 1; min-width: 280px;">
+          <h3 style="color: #d4a017;">Nutritious Meals</h3>
+          <p>Providing nutritious meals for children in rural communities to support their physical and mental development.</p>
+        </div>
+      </div>
+  
+      <!-- Activity 2 -->
+      <div style="display: flex; flex-wrap: wrap; margin-top: 40px; gap: 30px; align-items: center; flex-direction: row-reverse;">
+        <div style="flex: 1; min-width: 280px;">
+          <img src="image2.jpg" alt="Health Assistance" style="width: 100%; border-radius: 8px;">
+        </div>
+        <div style="flex: 1; min-width: 280px;">
+          <h3 style="color: #d4a017;">Health Assistance</h3>
+          <p>Providing free medication and health services for underprivileged families through local health collaborations.</p>
+        </div>
+      </div>
+  
+      <!-- Activity 3 -->
+      <div style="display: flex; flex-wrap: wrap; margin-top: 40px; gap: 30px; align-items: center;">
+        <div style="flex: 1; min-width: 280px;">
+          <img src="image3.jpg" alt="Mobility Support" style="width: 100%; border-radius: 8px;">
+        </div>
+        <div style="flex: 1; min-width: 280px;">
+          <h3 style="color: #d4a017;">Mobility Support</h3>
+          <p>Distributing wheelchairs, walking sticks, and mobility aids to help differently-abled individuals regain independence.</p>
+        </div>
+      </div>
+  
+      <!-- Activity 4 -->
+      <div style="display: flex; flex-wrap: wrap; margin-top: 40px; gap: 30px; align-items: center; flex-direction: row-reverse;">
+        <div style="flex: 1; min-width: 280px;">
+          <img src="image4.jpg" alt="Clean Water" style="width: 100%; border-radius: 8px;">
+        </div>
+        <div style="flex: 1; min-width: 280px;">
+          <h3 style="color: #d4a017;">Clean Water Access</h3>
+          <p>Installing RO water filters in remote schools and rural regions to ensure access to clean drinking water.</p>
+        </div>
+      </div>
+  
+      <!-- Activity 5 -->
+      <div style="display: flex; flex-wrap: wrap; margin-top: 40px; gap: 30px; align-items: center;">
+        <div style="flex: 1; min-width: 280px;">
+          <img src="image5.jpg" alt="Education" style="width: 100%; border-radius: 8px;">
+        </div>
+        <div style="flex: 1; min-width: 280px;">
+          <h3 style="color: #d4a017;">Empowering Education</h3>
+          <p>Providing students with school supplies, uniforms, and access to digital learning tools to support their studies.</p>
+        </div>
+      </div>
+  
+      <!-- Activity 6 -->
+      <div style="display: flex; flex-wrap: wrap; margin-top: 40px; gap: 30px; align-items: center; flex-direction: row-reverse;">
+        <div style="flex: 1; min-width: 280px;">
+          <img src="image6.jpg" alt="Rehabilitation Support" style="width: 100%; border-radius: 8px;">
+        </div>
+        <div style="flex: 1; min-width: 280px;">
+          <h3 style="color: #d4a017;">Rehabilitation Support</h3>
+          <p>Organizing therapy, assistive technology, and vocational training for those with developmental and physical disabilities.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
 
-<section id="donate">
-  <div class="container">
-    <h2 class="text-center">Donate</h2>
-    <form id="donorForm">
-      <div class="row mb-2">
-        <div class="col-md-6"><input type="text" class="form-control" placeholder="Name" required id="name"></div>
-        <div class="col-md-6"><input type="tel" class="form-control" placeholder="Phone" required id="phone"></div>
+<section id="donate" style="background: #f9f9f9; padding: 50px 20px;">
+    <div class="container">
+      <div style="display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: center;">
+        
+        <!-- Left Text Info -->
+        <div style="flex: 1; min-width: 300px; padding: 20px;">
+          <h2 style="color: #d4a017; font-weight: bold;">Support Sri Arunagiri Charitable Trust.</h2>
+          <p style="font-size: 18px; font-weight: 500; margin-top: 20px;">Your donation will reach those in need and help transform their lives.</p>
+          
+          <p><strong>Bank Account Details</strong><br>
+          Sri Arunagiri Charitable Trust<br>
+          A/c: 50200088573136<br>
+          IFSC Code: HDFC0000993<br>
+          HDFC BANK, Hindupur Branch</p>
+  
+          <p><strong>UPI Number:</strong> <span style="color: #000; font-weight: bold;">+91-83674 14144</span></p>
+  
+          <p><strong>Contact/WhatsApp:</strong> +91-95732-98764<br>
+          <strong>Email:</strong> <a href="mailto:info@sriarunagiriashram.org">info@sriarunagiriashram.org</a></p>
+  
+          <p style="font-weight: bold;">All donations are exempted under section 80G of the Income Tax Act. 1961</p>
+        </div>
+  
+        <!-- Right QR Image -->
+        <div style="flex: 1; min-width: 300px; padding: 20px; text-align: center;">
+          <div style="background: #f3b40b; padding: 20px; border-radius: 10px;">
+            <h3 style="color: white; margin-bottom: 15px;">SCAN HERE FOR UPI PAYMENTS</h3>
+            <img src="a356a8f8-e033-4808-949c-8db2f42881c5.png" alt="UPI QR Code" style="width: 250px; height: auto; margin-bottom: 15px;">
+            <div style="background: white; padding: 10px; border-radius: 5px;">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/7/75/PhonePe_Logo.svg" alt="PhonePe" style="height: 30px; margin-right: 10px;">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Google_Pay_%28GPay%29_Logo.svg/512px-Google_Pay_%28GPay%29_Logo.svg.png" alt="GPay" style="height: 30px; margin-right: 10px;">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Paytm_logo.png" alt="Paytm" style="height: 30px;">
+              <p style="margin-top: 10px; font-weight: bold;">+91-83674 14144</p>
+            </div>
+          </div>
+        </div>
+  
       </div>
-      <div class="row mb-2">
-        <div class="col-md-6"><input type="email" class="form-control" placeholder="Email" required id="email"></div>
-        <div class="col-md-6"><input type="number" class="form-control" placeholder="Amount" required id="amount"></div>
-      </div>
-      <div id="extraFields" class="hide mb-3">
-        <input type="text" class="form-control mb-2" placeholder="Aadhar Card Number" id="aadhar">
-        <input type="text" class="form-control" placeholder="PAN Card Number" id="pan">
-      </div>
-      <button type="submit" class="btn btn-warning">Donate Now</button>
-    </form>
-  </div>
-</section>
+    </div>
+  </section>
+
 
 <section id="trustees" class="bg-light">
   <div class="container">
@@ -111,23 +193,107 @@
   </div>
 </section>
 
-<section id="approvals">
-  <div class="container">
-    <h2 class="text-center">Government Approvals</h2>
-    <p class="text-center">Upload certificate scans here...</p>
-  </div>
-</section>
+<section style="padding: 50px 20px; background: #f9f9f9;">
+    <div style="max-width: 1200px; margin: auto; text-align: center;">
+      <h2 style="color: #d4a017;">Government Approvals & Recognitions</h2>
+      <p style="margin: 10px auto 40px; max-width: 700px; color: #333; font-size: 1.1em;">
+        Sri Arunagiri Charitable Trust is officially recognized and compliant with national regulations. Below are some of the approvals and certifications we hold:
+      </p>
 
-<section id="gallery" class="bg-light">
+      <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px;">
+        <div style="width: 200px;">
+          <img src="dummy-approval1.jpg" alt="Government Approval 1" style="width: 100%; border-radius: 8px;">
+          <p style="margin-top: 10px;">80G Tax Exemption Certificate</p>
+        </div>
+        <div style="width: 200px;">
+          <img src="dummy-approval2.jpg" alt="Government Approval 2" style="width: 100%; border-radius: 8px;">
+          <p style="margin-top: 10px;">FCRA Registration</p>
+        </div>
+        <div style="width: 200px;">
+          <img src="dummy-approval3.jpg" alt="Government Approval 3" style="width: 100%; border-radius: 8px;">
+          <p style="margin-top: 10px;">Niti Aayog Darpan ID</p>
+        </div>
+        <div style="width: 200px;">
+          <img src="dummy-approval4.jpg" alt="Government Approval 4" style="width: 100%; border-radius: 8px;">
+          <p style="margin-top: 10px;">Registered Trust Certificate</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <section id="gallery" class="bg-light" style="padding: 50px 0;">
   <div class="container">
-    <h2 class="text-center mb-4">Donation Gallery</h2>
+    <h2 class="text-center mb-4" style="color: #d4a017; font-weight: bold;">Donation Gallery</h2>
+
+    <style>
+      .gallery-container {
+        display: flex;
+        justify-content: center;
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+        scroll-behavior: smooth;
+        padding: 0 10px;
+      }
+
+      .gallery-card {
+        flex: 0 0 auto;
+        width: 150px;
+        height: 250px;
+        margin: 0 5px; /* Small space to prevent merging */
+        position: relative;
+        transition: transform 0.3s ease, filter 0.3s ease;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+      }
+
+      .gallery-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+
+      .gallery-card:hover {
+        transform: scaleX(1.3); /* Horizontal only */
+        z-index: 2;
+        filter: brightness(1.2);
+      }
+
+      .gallery-container:hover .gallery-card:not(:hover) {
+        filter: brightness(0.7);
+      }
+
+      @media (max-width: 768px) {
+        .gallery-card {
+          width: 120px;
+          height: 200px;
+        }
+      }
+    </style>
+
     <div class="gallery-container">
-      <div class="gallery-img"><img src="https://via.placeholder.com/250" alt="Donate 1"></div>
-      <div class="gallery-img"><img src="https://via.placeholder.com/250" alt="Donate 2"></div>
-      <div class="gallery-img"><img src="https://via.placeholder.com/250" alt="Donate 3"></div>
+      <div class="gallery-card">
+        <img src="https://via.placeholder.com/150x250?text=Game+1" alt="Game 1">
+      </div>
+      <div class="gallery-card">
+        <img src="https://via.placeholder.com/150x250?text=Game+2" alt="Game 2">
+      </div>
+      <div class="gallery-card">
+        <img src="https://via.placeholder.com/150x250?text=Game+3" alt="Game 3">
+      </div>
+      <div class="gallery-card">
+        <img src="https://via.placeholder.com/150x250?text=Game+4" alt="Game 4">
+      </div>
+      <div class="gallery-card">
+        <img src="https://via.placeholder.com/150x250?text=Game+5" alt="Game 5">
+      </div>
     </div>
   </div>
 </section>
+
 
 <section id="contact">
   <div class="container text-center">
